@@ -1,0 +1,11 @@
+Icons for the CodeAlpha Portfolio Skills section
+
+HTML5, CSS3, JavaScript, React, Git and GitHub icons are based on Font Awesome Free
+Brands SVGs. Copyright Fonticons, Inc.; licensed under CC BY 4.0.
+Font Awesome: https://fontawesome.com/
+License: https://creativecommons.org/licenses/by/4.0/
+
+React Native, SQL, Microsoft SQL Server, VS Code, Figma and Power BI icons in this
+project are simplified original SVG illustrations inspired by the respective
+technologies, not official assets or an endorsement by those companies.
+Brand names and trademarks belong to their respective owners.

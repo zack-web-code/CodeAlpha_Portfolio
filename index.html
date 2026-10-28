@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of Khethukhanyo Mbekeni, a Frontend Developer and Business Information Technology student.">
+    <title>Khethukhanyo Mbekeni | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="#home" class="logo" aria-label="Go to Home">
+                <img src="assets/images/my_logo.png" alt="KM logo">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" type="button"
+                        aria-label="Switch to light mode" aria-pressed="false" title="Switch to light mode">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                         stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                         stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5 8.5 8.5 0 1 0 20.5 14.2Z"></path>
+                    </svg>
+                </button>
+                <a class="cv-button" href="resume/Khethukhanyo_Mbekeni_CV.pdf" download="Khethukhanyo_Mbekeni_CV.pdf" type="application/pdf" aria-label="Download Khethukhanyo Mbekeni CV as PDF">Download CV</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="hero-intro">Hello, I'm</p>
+                <h1>Khethukhanyo <span>Mbekeni.</span></h1>
+                <h2>Frontend Developer &amp; BIT Student</h2>
+                <p class="hero-description">
+                    I'm a Business Information Technology student at the University of Johannesburg,
+                    passionate about creating modern, responsive and user-friendly digital experiences.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+                <div class="hero-socials" aria-label="Social links">
+                    <a href="https://github.com/zack-web-code" target="_blank" rel="noopener noreferrer"
+                       aria-label="GitHub profile" title="GitHub">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M9 19c-4.3 1.4-4.3-2.5-6-3"></path>
+                            <path d="M9 22v-3.87a3.37 3.37 0 0 0-.94-2.61C4.92 15.17 1.62 13.98 1.62 8.56a5.44 5.44 0 0 1 1.5-3.78 5.07 5.07 0 0 1 .09-3.77S4.39.68 7.12 2.51a13.38 13.38 0 0 1 9.76 0C19.61.68 20.79 1.01 20.79 1.01a5.07 5.07 0 0 1 .09 3.77 5.44 5.44 0 0 1 1.5 3.78c0 5.42-3.3 6.61-6.44 6.96a3.37 3.37 0 0 0-.94 2.61V22"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/khethukhanyo-mbekeni-57aa9134a" target="_blank"
+                       rel="noopener noreferrer" aria-label="LinkedIn profile" title="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                            <path d="M8 10v7m0-10h.01M12 17v-7h3a2 2 0 0 1 2 2v5"></path>
+                        </svg>
+                    </a>
+                    <a href="mailto:khethukhanyom@gmail.com" aria-label="Send an email" title="Email">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            <path d="m22 6-10 7L2 6"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-photo" aria-hidden="true">
+                <img src="assets/images/my_photo.png" alt="">
+            </div>
+        </section>
+        <!-- About -->
+        <section id="about" class="section about-section">
+            <div class="about-container">
+                <div class="about-grid">
+                    <div class="about-copy">
+                        <h2>About Me</h2>
+                        <p>
+                            I'm a Business Information Technology student at the
+                            University of Johannesburg, with a strong interest in
+                            frontend development, business analysis and creating
+                            meaningful digital solutions.
+                        </p>
+                        <p>
+                            My experience working on software projects has taught me
+                            that developing a successful application involves more
+                            than writing code. It requires creativity, collaboration,
+                            understanding user needs and finding practical ways to
+                            solve problems.
+                        </p>
+                        <p>
+                            I'm continuously developing my technical skills while
+                            exploring how technology can help businesses operate more
+                            effectively and improve people's everyday experiences.
+                        </p>
+                    </div>
+
+                    <aside class="about-focus" aria-labelledby="focus-heading">
+                        <h3 id="focus-heading">Beyond Writing Code</h3>
+                        <p>
+                            I believe the most valuable solutions begin with
+                            understanding the problem.
+                        </p>
+                        <p>
+                            My interest in technology goes beyond building websites
+                            and applications. I'm interested in understanding how
+                            businesses operate, identifying challenges they experience
+                            and developing solutions that address their actual needs.
+                        </p>
+                        <p>
+                            This approach influences how I think about software
+                            development. Rather than simply building something because
+                            I can, I want to understand why it needs to exist and what
+                            value it will provide.
+                        </p>
+                    </aside>
+                </div>
+
+                <div class="journey-intro">
+                    <h3>My Journey</h3>
+                    <p class="journey-tagline">
+                        Every journey has its turning points. Mine taught me that
+                        progress isn't always a straight line.
+                    </p>
+                    <p class="journey-summary">
+                        My educational journey has been filled with challenges,
+                        difficult decisions and opportunities to start again. What
+                        began as a struggle to find direction eventually became a
+                        journey of personal growth, determination and academic achievement.
+                    </p>
+
+                    <button
+                        class="journey-toggle"
+                        id="journey-toggle"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="journey-content"
+                    >
+                        <span class="journey-toggle-label">Read My Story</span>
+                        <svg class="journey-chevron" viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                             stroke-linejoin="round" aria-hidden="true">
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="journey-content" id="journey-content" aria-hidden="true" inert>
+                    <div class="journey-content-inner">
+                        <ol class="journey-timeline">
+                            <li class="journey-item">
+                                <span class="journey-date">Kokstad</span>
+                                <h4>Where It Began</h4>
+                                <p>
+                                    My high school journey started at Carl Malcomess
+                                    High School in KwaZulu-Natal. During this period, I
+                                    struggled academically because I hadn't yet developed
+                                    a clear vision for my education.
+                                </p>
+                            </li>
+                            <li class="journey-item">
+                                <span class="journey-date">2018</span>
+                                <h4>A New Beginning in Durban</h4>
+                                <p>
+                                    Following my grandmother's encouragement, I moved
+                                    to Wentworth, Durban, where I repeated Grade 10 at
+                                    Fairvale. Unfortunately, I experienced another
+                                    academic setback.
+                                </p>
+                            </li>
+                            <li class="journey-item">
+                                <span class="journey-date">2019</span>
+                                <h4>A Year Away</h4>
+                                <p>
+                                    I took a gap year, stepping away from formal education.
+                                </p>
+                            </li>
+                            <li class="journey-item">
+                                <span class="journey-date">2020–2021</span>
+                                <h4>Johannesburg</h4>
+                                <p>
+                                    I enrolled at Destiny Charter Schools, where I studied
+                                    Commerce and successfully passed Grade 10. However,
+                                    I left school again during Grade 11 in 2021 because
+                                    I still hadn't discovered my purpose.
+                                </p>
+                            </li>
+                            <li class="journey-item">
+                                <span class="journey-date">2022</span>
+                                <h4>Another Year Away</h4>
+                                <p>
+                                    I remained out of school, still searching for direction
+                                    and a clearer sense of purpose.
+                                </p>
+                            </li>
+                            <li class="journey-item journey-milestone">
+                                <span class="journey-date">2023</span>
+                                <h4>The Turning Point</h4>
+                                <p>
+                                    Encouraged by my mother, I returned to school at
+                                    Mangwazana High School in Obonjeni, KwaZulu-Natal,
+                                    where I enrolled in Grade 11. This time, I approached
+                                    education with a different mindset, greater determination
+                                    and a renewed sense of purpose. It marked the beginning
+                                    of a significant transformation in my life.
+                                </p>
+                            </li>
+                            <li class="journey-item journey-milestone">
+                                <span class="journey-date">2024</span>
+                                <h4>The Achievement</h4>
+                                <p>
+                                    I completed Grade 12 at Mangwazana High School,
+                                    achieving <strong>six distinctions and finishing as
+                                    the school's top-performing student</strong>. This
+                                    achievement represented more than academic success.
+                                    It was proof of how far I had come through perseverance,
+                                    personal growth and a change in mindset.
+                                </p>
+                            </li>
+                            <li class="journey-item">
+                                <span class="journey-date">2025–Present</span>
+                                <h4>University of Johannesburg</h4>
+                                <p>
+                                    Today, I'm studying towards a Diploma in Business
+                                    Information Technology at my dream university,
+                                    pursuing a field I've developed a genuine passion for.
+                                </p>
+                            </li>
+                        </ol>
+                        <blockquote class="journey-quote">
+                            My journey has taught me that your past does not have to
+                            define your future. What matters is your willingness to
+                            grow, change and keep moving forward.
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Skills -->
+        <section id="skills" class="section skills-section">
+            <div class="skills-container">
+                <div class="skills-heading">
+                    <h2>My Skills</h2>
+                    <p>
+                        The technologies and tools I've worked with while learning,
+                        designing and building software projects.
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skills-card">
+                        <div class="skills-card-heading">
+                            <div class="skills-category-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                     stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="m8 8-4 4 4 4"></path>
+                                    <path d="m16 8 4 4-4 4"></path>
+                                    <path d="m14 5-4 14"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Frontend Development</h3>
+                                <p>Creating responsive user interfaces.</p>
+                            </div>
+                        </div>
+
+                        <ul class="skills-list" aria-label="Frontend Development technologies">
+                            <li><img class="skill-logo" src="assets/icons/html5.svg" alt="" width="22" height="22" loading="lazy"><span>HTML5</span></li>
+                            <li><img class="skill-logo" src="assets/icons/css3.svg" alt="" width="22" height="22" loading="lazy"><span>CSS3</span></li>
+                            <li><img class="skill-logo" src="assets/icons/javascript.svg" alt="" width="22" height="22" loading="lazy"><span>JavaScript</span></li>
+                            <li><img class="skill-logo" src="assets/icons/react.svg" alt="" width="22" height="22" loading="lazy"><span>React</span></li>
+                            <li><img class="skill-logo" src="assets/icons/react-native.svg" alt="" width="22" height="22" loading="lazy"><span>React Native</span></li>
+                        </ul>
+                    </article>
+
+                    <article class="skills-card">
+                        <div class="skills-card-heading">
+                            <div class="skills-category-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                     stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <ellipse cx="12" cy="5" rx="8" ry="3"></ellipse>
+                                    <path d="M4 5v7c0 1.7 3.6 3 8 3s8-1.3 8-3V5"></path>
+                                    <path d="M4 12v7c0 1.7 3.6 3 8 3s8-1.3 8-3v-7"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Database Technologies</h3>
+                                <p>Working with relational data.</p>
+                            </div>
+                        </div>
+
+                        <ul class="skills-list" aria-label="Database technologies">
+                            <li><img class="skill-logo" src="assets/icons/sql.svg" alt="" width="22" height="22" loading="lazy"><span>SQL</span></li>
+                            <li><img class="skill-logo" src="assets/icons/sql-server.svg" alt="" width="22" height="22" loading="lazy"><span>Microsoft SQL Server</span></li>
+                        </ul>
+                    </article>
+
+                    <article class="skills-card">
+                        <div class="skills-card-heading">
+                            <div class="skills-category-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                     stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 7h16M4 17h16"></path>
+                                    <circle cx="9" cy="7" r="2.5" fill="var(--background)" stroke="currentColor"></circle>
+                                    <circle cx="16" cy="17" r="2.5" fill="var(--background)" stroke="currentColor"></circle>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Development &amp; Design Tools</h3>
+                                <p>Planning, designing and delivering work.</p>
+                            </div>
+                        </div>
+
+                        <ul class="skills-list" aria-label="Development and design tools">
+                            <li><img class="skill-logo" src="assets/icons/git.svg" alt="" width="22" height="22" loading="lazy"><span>Git</span></li>
+                            <li><img class="skill-logo skill-logo-github" src="assets/icons/github.svg" alt="" width="22" height="22" loading="lazy"><span>GitHub</span></li>
+                            <li><img class="skill-logo" src="assets/icons/vscode.svg" alt="" width="22" height="22" loading="lazy"><span>VS Code</span></li>
+                            <li><img class="skill-logo" src="assets/icons/figma.svg" alt="" width="22" height="22" loading="lazy"><span>Figma</span></li>
+                            <li><img class="skill-logo" src="assets/icons/powerbi.svg" alt="" width="22" height="22" loading="lazy"><span>Power BI</span></li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- Projects -->
+        <section id="projects" class="section projects-section">
+            <div class="projects-container">
+                <div class="projects-heading">
+                    <h2>Featured Projects</h2>
+                    <p>A selection of the collaborative software projects I have contributed to, focused on creating useful and responsive experiences.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Trade Grid -->
+                    <article class="project-card" aria-labelledby="tradegrid-title">
+                        <div class="project-card-top">
+                            <div>
+                                <p class="project-kind">Web application</p>
+                                <h3 id="tradegrid-title">Trade Grid</h3>
+                            </div>
+                            <span class="project-status project-status-done">Completed</span>
+                        </div>
+
+                        <button class="project-image project-image-web" type="button"
+                                data-gallery="tradegrid" data-index="0"
+                                aria-label="Enlarge Trade Grid website screenshot">
+                            <img src="assets/images/projects/trade-grid/home.png"
+                                 alt="Trade Grid homepage showing its global importer and exporter matching platform"
+                                 loading="lazy">
+                            <span class="project-image-hint">View screenshot <span aria-hidden="true">↗</span></span>
+                        </button>
+                        <p class="project-media-label">Trade Grid — Homepage</p>
+
+                        <div class="project-details">
+                            <p class="project-description">
+                                Trade Grid is a web platform for connecting importers and exporters,
+                                helping businesses discover potential trading partners and explore international markets.
+                            </p>
+                            <p class="project-role"><strong>My contribution:</strong> Frontend team member, working on the user interface and responsive layouts.</p>
+                            <div class="project-tags" aria-label="Project focus areas">
+                                <span>Web UI</span><span>Responsive Design</span><span>Team Project</span>
+                            </div>
+                        </div>
+
+                        <div class="project-actions">
+                            <a class="project-action project-action-primary"
+                               href="https://tradegrid-32ip.onrender.com"
+                               target="_blank" rel="noopener noreferrer">
+                                Live Website <span aria-hidden="true">↗</span>
+                            </a>
+                            <a class="project-action project-action-secondary"
+                               href="https://github.com/dswcodex-cmd/TradeGrid.git"
+                               target="_blank" rel="noopener noreferrer">
+                                GitHub <span aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- MechanIQ -->
+                    <article class="project-card" aria-labelledby="mechaniq-title">
+                        <div class="project-card-top">
+                            <div>
+                                <p class="project-kind">Mobile application</p>
+                                <h3 id="mechaniq-title">MechanIQ</h3>
+                            </div>
+                            <span class="project-status project-status-progress">In development</span>
+                        </div>
+
+                        <div class="project-mobile-gallery" aria-label="MechanIQ app screenshots">
+                            <button class="project-mobile-shot" type="button"
+                                    data-gallery="mechaniq" data-index="0"
+                                    aria-label="Enlarge MechanIQ login screen">
+                                <img src="assets/images/projects/mechaniq/login.png"
+                                     alt="MechanIQ mobile login screen" loading="lazy">
+                            </button>
+                            <button class="project-mobile-shot" type="button"
+                                    data-gallery="mechaniq" data-index="1"
+                                    aria-label="Enlarge MechanIQ customer dashboard">
+                                <img src="assets/images/projects/mechaniq/customer-dashboard.png"
+                                     alt="MechanIQ customer dashboard with vehicle and service quick actions" loading="lazy">
+                            </button>
+                            <button class="project-mobile-shot" type="button"
+                                    data-gallery="mechaniq" data-index="2"
+                                    aria-label="Enlarge MechanIQ mechanic dashboard">
+                                <img src="assets/images/projects/mechaniq/mechanic-dashboard.png"
+                                     alt="MechanIQ mechanic dashboard showing overview cards and service actions" loading="lazy">
+                            </button>
+                        </div>
+                        <p class="project-media-label">Login · Customer Dashboard · Mechanic Dashboard — Click to enlarge</p>
+
+                        <div class="project-details">
+                            <p class="project-description">
+                                MechanIQ is a mobile vehicle-assistance application designed around diagnostics,
+                                service requests, finding mechanics, and fuel support for drivers.
+                            </p>
+                            <p class="project-role"><strong>My contribution:</strong> Frontend team member, helping build and adapt the customer and mechanic interfaces.</p>
+                            <div class="project-tags" aria-label="Project focus areas">
+                                <span>React Native</span><span>Mobile UI</span><span>Team Project</span>
+                            </div>
+                        </div>
+
+                        <div class="project-actions">
+                            <span class="project-action project-action-unavailable" aria-label="MechanIQ demo is not yet public">
+                                Demo coming soon
+                            </span>
+                            <span class="project-action project-action-unavailable" aria-label="MechanIQ repository is not yet public">
+                                Repository coming soon
+                            </span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enlarged project screenshot viewer -->
+        <dialog class="project-lightbox" id="project-lightbox" aria-label="Project screenshot preview">
+            <div class="project-lightbox-panel">
+                <div class="project-lightbox-toolbar">
+                    <p id="project-lightbox-title"></p>
+                    <button type="button" class="project-lightbox-close" id="project-lightbox-close"
+                            aria-label="Close screenshot preview">Close ✕</button>
+                </div>
+                <div class="project-lightbox-stage">
+                    <button type="button" class="project-lightbox-nav" id="project-lightbox-prev"
+                            aria-label="Previous screenshot">‹</button>
+                    <img id="project-lightbox-image" alt="">
+                    <button type="button" class="project-lightbox-nav" id="project-lightbox-next"
+                            aria-label="Next screenshot">›</button>
+                </div>
+                <p class="project-lightbox-caption" id="project-lightbox-caption"></p>
+            </div>
+        </dialog>
+        <!-- Contact -->
+        <section id="contact" class="section contact-section">
+            <div class="contact-container">
+                <div class="contact-heading">
+                    <h2>Get In Touch</h2>
+                    <p>Have a project in mind, an opportunity to collaborate, or a problem worth solving? I'd love to hear about it.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-details">
+                        <h3>Let's connect</h3>
+                        <p>
+                            I'm always interested in meaningful conversations about frontend development,
+                            business analysis and practical digital solutions. Reach out through email,
+                            GitHub or LinkedIn.
+                        </p>
+
+                        <ul class="contact-methods">
+                            <li>
+                                <span class="contact-method-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                        <path d="m22 6-10 7L2 6"></path>
+                                    </svg>
+                                </span>
+                                <div>
+                                    <span class="contact-method-label">Email</span>
+                                    <a href="mailto:khethukhanyom@gmail.com">khethukhanyom@gmail.com</a>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="contact-method-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M9 19c-4.3 1.4-4.3-2.5-6-3"></path>
+                                        <path d="M9 22v-3.87a3.37 3.37 0 0 0-.94-2.61C4.92 15.17 1.62 13.98 1.62 8.56a5.44 5.44 0 0 1 1.5-3.78 5.07 5.07 0 0 1 .09-3.77S4.39.68 7.12 2.51a13.38 13.38 0 0 1 9.76 0C19.61.68 20.79 1.01 20.79 1.01a5.07 5.07 0 0 1 .09 3.77 5.44 5.44 0 0 1 1.5 3.78c0 5.42-3.3 6.61-6.44 6.96a3.37 3.37 0 0 0-.94 2.61V22"></path>
+                                    </svg>
+                                </span>
+                                <div>
+                                    <span class="contact-method-label">GitHub</span>
+                                    <a href="https://github.com/zack-web-code" target="_blank" rel="noopener noreferrer">github.com/zack-web-code <span aria-hidden="true">↗</span></a>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="contact-method-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                                        <path d="M8 10v7m0-10h.01M12 17v-7h3a2 2 0 0 1 2 2v5"></path>
+                                    </svg>
+                                </span>
+                                <div>
+                                    <span class="contact-method-label">LinkedIn</span>
+                                    <a href="https://www.linkedin.com/in/khethukhanyo-mbekeni-57aa9134a" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="contact-method-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"></path>
+                                        <circle cx="12" cy="10" r="2.5"></circle>
+                                    </svg>
+                                </span>
+                                <div>
+                                    <span class="contact-method-label">Based in</span>
+                                    <span class="contact-location">Johannesburg, South Africa</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <form class="contact-form" id="contact-form">
+                        <h3>Send a message</h3>
+                        <p class="contact-form-intro">Tell me a little about what you'd like to discuss.</p>
+
+                        <div class="contact-form-row">
+                            <div class="contact-field">
+                                <label for="contact-name">Your name</label>
+                                <input type="text" id="contact-name" name="name" autocomplete="name" placeholder="Your name" maxlength="100" required>
+                            </div>
+                            <div class="contact-field">
+                                <label for="contact-email">Your email</label>
+                                <input type="email" id="contact-email" name="email" autocomplete="email" placeholder="you@example.com" maxlength="254" required>
+                            </div>
+                        </div>
+
+                        <div class="contact-field">
+                            <label for="contact-subject">Subject</label>
+                            <input type="text" id="contact-subject" name="subject" placeholder="What's this about?" maxlength="120" required>
+                        </div>
+
+                        <div class="contact-field">
+                            <label for="contact-message">Your message</label>
+                            <textarea id="contact-message" name="message" rows="6" placeholder="Tell me about your idea, project or opportunity..." maxlength="2000" required></textarea>
+                        </div>
+
+                        <button type="submit" class="contact-submit">
+                            Open email draft <span aria-hidden="true">↗</span>
+                        </button>
+                        <p class="contact-form-note">
+                            This opens your email app with a draft. Nothing is sent automatically.
+                        </p>
+                        <p class="contact-form-status" id="contact-form-status" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer"><p>&copy; 2026 Khethukhanyo Mbekeni. All rights reserved.</p></footer>
+</body>
+</html>
