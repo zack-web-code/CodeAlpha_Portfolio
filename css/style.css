@@ -275,12 +275,18 @@ html[data-theme="light"] .moon-icon { display: block; }
 .footer { border-top: 1px solid var(--border); padding: 30px 8%; text-align: center; }
 .footer p { font-size: 13px; color: var(--text-secondary); }
 
-/* Smaller desktop */
+/* Smaller desktop: begin fading the portrait as the available width decreases. */
 @media (max-width: 1200px) {
     .hero { padding: 65px 6%; }
     .hero-content { width: 62%; }
     .hero h1 { font-size: clamp(40px, 4.5vw, 60px); }
     .hero-photo { width: 70%; }
+    .hero-photo img {
+        top: -18%;
+        height: 145%;
+        opacity: 0.80;
+        filter: blur(1.5px);
+    }
 }
 
 /* Tablet and narrow desktop */
@@ -296,17 +302,20 @@ html[data-theme="light"] .moon-icon { display: block; }
     .hero-photo { width: 74%; }
     .hero-photo img {
         top: auto;
-        bottom: -8%;
-        right: -15%;
-        height: 130%;
+        bottom: 0;
+        right: -5%;
+        height: 100%;
+        min-height: 0;
+        opacity: 0.52;
+        filter: blur(4px);
     }
     .hero-photo::after {
         background:
             linear-gradient(to right,
-                var(--fade-100) 0%, var(--fade-97) 22%, var(--fade-78) 48%,
-                var(--fade-12) 80%, transparent 100%),
+                var(--fade-100) 0%, var(--fade-97) 23%, var(--fade-85) 45%,
+                var(--fade-35) 75%, var(--fade-20) 100%),
             linear-gradient(to bottom,
-                var(--fade-20) 0%, transparent 15%, transparent 92%, var(--fade-12) 100%);
+                var(--fade-20) 0%, transparent 22%, transparent 65%, var(--fade-65) 100%);
     }
 }
 
@@ -324,10 +333,11 @@ html[data-theme="light"] .moon-icon { display: block; }
         padding: 6px 0 10px;
     }
     .hero { scroll-margin-top: 135px; }
+    .hero-photo img { opacity: 0.35; filter: blur(6px); }
     .section { scroll-margin-top: 135px; }
 }
 
-/* Mobile layout: photograph stays anchored INSIDE the hero, never a detached block. */
+/* Mobile layout: portrait is a faint background, not an extra block below the text. */
 @media (max-width: 700px) {
     .navbar { padding: 8px 5%; }
     .nav-links { gap: clamp(11px, 3vw, 22px); }
@@ -337,9 +347,9 @@ html[data-theme="light"] .moon-icon { display: block; }
     .nav-actions { gap: 8px; }
 
     .hero {
-        min-height: 0;
+        min-height: max(590px, calc(100svh - 135px));
         align-items: flex-start;
-        padding: 52px 6% 330px;
+        padding: 52px 6% 72px;
     }
     .hero-content { width: 100%; max-width: 550px; }
     .hero-intro { font-size: 15px; margin-bottom: 14px; }
@@ -359,17 +369,19 @@ html[data-theme="light"] .moon-icon { display: block; }
     .hero-photo img {
         top: auto;
         bottom: 0;
-        right: -10%;
-        height: clamp(320px, 110vw, 460px);
+        right: -15%;
+        height: 100%;
         min-height: 0;
+        opacity: 0.22;
+        filter: blur(9px);
     }
     .hero-photo::before { display: none; }
     .hero-photo::after {
         background:
+            linear-gradient(to right,
+                var(--fade-100) 0%, var(--fade-97) 22%, var(--fade-85) 60%, var(--fade-65) 100%),
             linear-gradient(to bottom,
-                var(--fade-100) 0%, var(--fade-100) 35%,
-                var(--fade-85) 48%, var(--fade-20) 70%, transparent 89%),
-            linear-gradient(to right, var(--fade-65) 0%, transparent 78%);
+                var(--fade-35) 0%, transparent 26%, transparent 65%, var(--fade-100) 100%);
     }
     .section { padding: 70px 6%; scroll-margin-top: 135px; }
     .section h2 { font-size: 30px; }
@@ -380,10 +392,17 @@ html[data-theme="light"] .moon-icon { display: block; }
     .nav-links a { font-size: 11px; }
     .nav-links { gap: 12px; }
     .hero h1 { font-size: clamp(31px, 8.4vw, 38px); }
-    .hero { padding-bottom: 280px; }
+    .hero { padding-bottom: 66px; }
+    .hero-photo img { opacity: 0.12; filter: blur(12px); }
     .btn { padding: 11px 15px; }
 }
 
+
+
+/* The portrait fades almost completely at narrow phone widths. */
+@media (min-width: 381px) and (max-width: 480px) {
+    .hero-photo img { opacity: 0.14; filter: blur(11px); }
+}
 
 /* About Me */
 .about-section {
